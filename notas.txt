@@ -1,5 +1,5 @@
-https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli
-
-brew tap heroku/brew && brew install heroku
-heroku create
+vercel
+siempre toma la main
+crear vercel.json
+mover todo a una carpeta 'api'
 https://www.youtube.com/watch?v=q--_5p15HnU

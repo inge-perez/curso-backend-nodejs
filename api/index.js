@@ -9,7 +9,7 @@ const {
 } = require('./middlewares/error.handle');
 
 const app = express();
-const port = 3010;
+const port = process.env.PORT || 3010;
 
 app.use(express.json());
 const whitelist = ['http://localhost:8080'];
@@ -24,7 +24,7 @@ const options = {
 };
 app.use(cors(options));
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hola mi server en Express');
 });
 
